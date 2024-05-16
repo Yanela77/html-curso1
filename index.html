@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- /*This is the firts element on every HTML page, it tells the browser to expect HMTL and what version to use. 
+And html, just means to use the newest version of HTML */  -->
+
+<html lang="en">
+    <!-- /* all of this is the contents of the HTML element, 
+    All page content must be contained in this HTML tags*/ -->
+    <head>
+     <!--where metadata elements go, here we can put, links to the external CSS file, and a external Js file -->
+     <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <!-- /*The body is going to contain all the visible content in a page */ -->
+        <!-- <h1> Hello World </h1> -->
+        <h2> CatPhotoApp </h2>
+        <main>
+            <h3> Cat Photos </h3>
+            <p>Click here to view more 
+                <a href="#" target="_blank"> Cat Photos </a>
+            </p>
+            <!-- <a href="https://catphotos.com"> Cat Photos </a> -->
+            <a href="#" target="_blank"><img src="https://fcc.im/fcc-relaxing-cat" alt="a cute orange cat lying on its back"></a>
+            <!-- src is atribute source 
+            and every atribute is paired with a value ("http") 
+            alt is a text  description of the image, improve accesibility-->
+            <h3>Cat Lists</h3>
+            <div class="Lists">
+                <p>Thigs cats <em>love:</em></p>
+                <!-- em italicized -->
+                <ul> 
+                    <!-- //unorder list  scripts (guiones)-->
+                    <li>cat nip</li> <!--lists items-->
+                    <li>laser</li>
+                    <li>lasagna</li>
+                </ul>
+                <img src="lasagna.jpg" alt="lasagna">
+                <p>Things cat <strong>hate:</strong></p>
+                <!-- strong makes bold -->
+                <ol>
+                    <!-- ordered list 1, 2 , 3-->
+                    <li>flea </li>
+                    <li>thunder </li>
+                    <li>other cats </li>
+                </ol>
+            </div> 
+            <img src="cat.jpg" alt="cat">
+            <form action="/submit-cat-photo">
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked> indoor </label><!--checked is for default check--> <br> <!--linebreak-->
+                <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" > outdoor </label><br>
+
+                <label for="loving"><input id="loving" type="checkbox" name="personality" checked>loving</label><br>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality">lazy</label><br>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality">energetic</label><br>
+                
+                <input type="text"  placeholder="cat photo URL" required> <!--textbox with attribute required --><br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <!--this part is most for SEOs purposes-->
+            <p><small> Copyright - <a href="https://freecodecamp.org">freecodeCamp.org</a></small></p>
+        </footer>
+    </body>
+</html>
+
+
+
+
